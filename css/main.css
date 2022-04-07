@@ -15,15 +15,30 @@ body {
   margin: 0;
 }
 
-img {
-  width: 100%;
-  margin: 0 .5rem
-  {
-
+h1, h2, {
+  font-family: "Denk One";
+  color: #623b0c;
 }
 
-h1, h2, {
-  font-family: "Denk One", sans-serif;
+img {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+li {
+  background-color: #ede3db;
+  border: 2px solid #623b0c;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 header h1 {
@@ -33,80 +48,10 @@ header h1 {
   align-items:flex-start;
 }
 
-ol {
+main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "banner banner"
   "col1 col2";
-}
-
-header img {
-  width: 2.25rem;
-  order: -1;
-  margin-right: .5rem;
-}
-
-header p {
-  margin: 0 auto;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 1.125rem;
-  display: flex;
-}
-
-nav a,
-nav a:visited {
-  color: #0074d9;
-  text-decoration: none;
-  padding: .6rem 1.25rem;
-}
-
-nav a:hover,
-nav a:focus {
-  background-color: #000;
-  color: #fff;
-  border-radius: 8px;
-}
-
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 0;
-  padding: 2rem 0;
-}
-
-article {
-  background-color: #fff;
-  border: 2px solid #e7e7e7;
-  border-radius: 10px;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-p {
-  margin: 0 0 auto;
-}
-
-section a {
-  font-size: 1.125rem;
-  background-color: #e7e7e7;
-  color: #000;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 10px;
-  padding: .75rem;
-  margin-top: 1.5rem;
-}
-
-section a:hover {
-  background-color: #000;
-  color: #fff;
 }
